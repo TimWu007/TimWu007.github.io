@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>Pay Info</title>
+  <link rel="stylesheet" href="http://res.wx.qq.com/open/libs/weui/1.1.2/weui.css"/>
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+  <script type="text/javascript"></script>
+</head>
+
+<body>
+<!--<div class="weui-msg">
+<div class="weui-msg__icon-area"><i class="weui-icon-info weui-icon_msg"></i></div>
+</div>
+
+<div id="container" class="container">
+      <div class="page input js_show">
+       <div class="weui-cells__title">支持直接扫描<a href="index.html">付款码</a>的程序</div>
+        <a class="weui-cell weui-cell_access" href="http://pay.timwu007.tk/wechatpay.html">
+       	  <div class="weui-cell__hd"><img src="http://www.timwu007.tk/wp-content/uploads/2018/02/WeChatLogo.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+          <div class="weui-cell__bd"><p>微信支付</p></div>
+          <div class="weui-cell__ft">微信</div>
+        </a>
+        
+   			<a class="weui-cell weui-cell_access" href="https://qr.alipay.com/tsx03481owrlfns1w5uadfa">
+        		<div class="weui-cell__hd"><img src="http://www.timwu007.tk/wp-content/uploads/2018/02/AlipayLogo.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+        		<div class="weui-cell__bd">
+            		<p>支付宝</p>
+        		</div>
+       			<div class="weui-cell__ft">支付宝</div>
+   			</a>
+   			<a class="weui-cell weui-cell_access" href="http://pay.timwu007.tk/qqpay.html">
+        		<div class="weui-cell__hd"><img src="http://www.timwu007.tk/wp-content/uploads/2018/02/QQLogo.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+        		<div class="weui-cell__bd">
+            		<p>QQ 钱包</p>
+        		</div>
+       			<div class="weui-cell__ft">QQ、TIM</div>
+   			</a>
+        <a class="weui-cell weui-cell_access" href="https://qr.alipay.hk/28100401010nnnqrpyik9xkwea">
+        		<div class="weui-cell__hd"><img src="http://www.timwu007.tk/wp-content/uploads/2018/02/AlipayHKLogo.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+        		<div class="weui-cell__bd">
+            		<p>支付寶HK</p>
+        		</div>
+       			<div class="weui-cell__ft">支付寶HK</div>
+        </a>
+
+        <a class="weui-cell weui-cell_access" href="https://qr.95516.com/00010000/62022614452437631250589016210541" >
+            <div class="weui-cell__hd"><img src="http://www.timwu007.tk/wp-content/uploads/2018/02/230x0w.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="weui-cell__bd">
+                <p>银联云闪付</p>
+            </div>
+            <div class="weui-cell__ft">大众点评</div>
+        </a>
+
+        <a class="weui-cell weui-cell_access" href="https://3.cn/y9evRc" >
+            <div class="weui-cell__hd"><img src="http://www.timwu007.tk/wp-content/uploads/2018/02/JDLogo.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+            <div class="weui-cell__bd">
+                <p>京东支付</p>
+            </div>
+            <div class="weui-cell__ft">微信</div>
+        </a>
+</div>-->
+<div class="weui-msg__text-area">
+  <br/>
+  <h2 class="weui-msg__title">支持页面</h2>
+</div>
+
+<div class="weui-cells__title">支持直接扫描<a href="index.html">付款码</a>付款的应用程序</div>
+
+<div class="weui-grids">
+  <a href="javascript:;" class="weui-grid showWeChat">
+    <div class="weui-grid__icon">
+    <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/WeChatLogo.jpg" alt="">
+    </div>
+  <p class="weui-grid__label">微信</p>
+  </a>
+
+  <a href="javascript:;" class="weui-grid showAlipay">
+    <div class="weui-grid__icon">
+      <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/AlipayLogo.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">支付宝</p>
+  </a>
+
+  <a href="javascript:;" class="weui-grid showQQ">
+    <div class="weui-grid__icon">
+      <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/QQLogo.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">QQ、TIM</p>
+  </a>
+
+  <a href="javascript:;" class="weui-grid showAlipayHK">
+    <div class="weui-grid__icon">
+      <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/AlipayHKLogo.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">支付寶HK</p>
+  </a>
+
+  <a href="javascript:;" class="weui-grid showDianping">
+    <div class="weui-grid__icon">
+      <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/DianpingLogo.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">大众点评</p>
+  </a>
+
+  <a href="javascript:;" class="weui-grid">
+    <div class="weui-grid__icon"></div>
+    <p class="weui-grid__label">即将支持更多</p>
+  </a>
+</div>
+
+<div class="weui-cells__title">其他可付款的应用程序</div>
+
+<div class="weui-grids">
+  <a href="javascript:;" class="weui-grid showPayPalUS">
+    <div class="weui-grid__icon">
+      <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/PayPalLogo.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">PayPal</p>
+  </a>
+
+  <a href="javascript:;" class="weui-grid showUnionPay">
+    <div class="weui-grid__icon">
+      <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/230x0w.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">云闪付</p>
+  </a>
+
+  <a href="javascript:;" class="weui-grid showJDPay">
+    <div class="weui-grid__icon">
+      <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/JDLogo.jpg" alt="">
+    </div>
+    <p class="weui-grid__label">京东</p>
+  </a>
+</div>
+
+<div id="dialogs">
+  <div class="js_dialog" id="UnionPay" style="opacity: 1; display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+      <div class="weui-dialog__hd"><strong class="weui-dialog__title">云闪付、手机银行</strong></div>
+      <div class="weui-dialog__bd">
+        <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/UnionPay-e1517640051944.png"/><br />请通过美团、大众点评、京东及<br />云闪付、大部分手机银行客户端<br />扫描并使用银联云闪付支付
+      </div>
+      <div class="weui-dialog__ft">
+        <a href="https://billcloud.unionpay.com/upwxs-mktc/web/mapp/wxe990cdbcc189456e/custom/alllist" class="weui-dialog__btn weui-dialog__btn_default">支持页</a>
+        <a href="https://qr.95516.com/00010000/62022614452437631250589016210541" class="weui-dialog__btn weui-dialog__btn_default">支付页</a>
+        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="js_dialog" id="PayPalUS" style="opacity: 1; display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+      <div class="weui-dialog__hd"><strong class="weui-dialog__title">PayPal</strong></div>
+      <div class="weui-dialog__bd">
+        <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/PayPal-US-e1517584111705.png"/><br />PayPal 客户端不支持直接扫付款码<br />请通过 PayPal 客户端扫描<br />（仅部分地区用户支持扫描）
+      </div>
+      <div class="weui-dialog__ft">
+        <a href="https://www.paypal.me/timtianhao" class="weui-dialog__btn weui-dialog__btn_default">在线支付</a>
+        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="js_dialog" id="JDPay" style="opacity: 1; display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+      <div class="weui-dialog__hd"><strong class="weui-dialog__title">京东</strong></div>
+      <div class="weui-dialog__bd">
+        <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/JDPay-e1517624479973.png"/><br />京东客户端不支持直接扫描付款码<br />请通过京东客户端扫描上方二维码<br />并使用京东支付
+      </div>
+      <div class="weui-dialog__ft">
+        <a href="https://3.cn/y9evRc" class="weui-dialog__btn weui-dialog__btn_default">在线支付</a>
+        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="js_dialog" id="WeChat" style="opacity: 1; display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+      <div class="weui-dialog__hd"><strong class="weui-dialog__title">微信</strong></div>
+      <div class="weui-dialog__bd">可直接通过微信扫描<a href="index.html">付款码</a><br />并使用微信支付、京东支付<br />以及 WeChat Pay HK 支付</div>
+      <div class="weui-dialog__ft">
+        <a href="wechatpay.html" class="weui-dialog__btn weui-dialog__btn_default">支付页</a>
+        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="js_dialog" id="Alipay" style="opacity: 1; display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+      <div class="weui-dialog__hd"><strong class="weui-dialog__title">支付宝</strong></div>
+      <div class="weui-dialog__bd">
+        <img src="http://www.timwu007.tk/wp-content/uploads/2018/02/Alipay-Red-Packet-e1517651310307.png"/><br />欢迎在支付前扫描领取支付宝红包
+      </div>
+      <div class="weui-dialog__ft">
+        <a href="https://qr.alipay.com/tsx03481owrlfns1w5uadfa" class="weui-dialog__btn weui-dialog__btn_default">支付页</a>
+        <a href="https://qr.alipay.com/cpx02101hkfzk8htr3cy2e0" class="weui-dialog__btn weui-dialog__btn_default">红包页</a>
+        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="js_dialog" id="QQ" style="opacity: 1; display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+      <div class="weui-dialog__hd"><strong class="weui-dialog__title">QQ、TIM</strong></div>
+      <div class="weui-dialog__bd">可直接通过 QQ、QQ HD、<br />QQ 轻聊版及 TIM 扫描<a href="index.html">付款码</a><br />并使用 QQ 钱包支付</div>
+      <div class="weui-dialog__ft">
+        <a href="qqpay.html" class="weui-dialog__btn weui-dialog__btn_default">支付页</a>
+        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="js_dialog" id="AlipayHK" style="opacity: 1; display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+      <div class="weui-dialog__hd"><strong class="weui-dialog__title">支付寶HK</strong></div>
+      <div class="weui-dialog__bd">可直接通过支付寶HK扫描<a href="index.html">付款码</a><br />并使用支付寶HK支付</div>
+      <div class="weui-dialog__ft">
+        <a href="https://qr.alipay.hk/28100401010nnnqrpyik9xkwea" class="weui-dialog__btn weui-dialog__btn_default">支付页</a>
+        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="js_dialog" id="Dianping" style="opacity: 1; display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+      <div class="weui-dialog__hd"><strong class="weui-dialog__title">大众点评</strong></div>
+      <div class="weui-dialog__bd">可直接通过大众点评扫描<a href="index.html">付款码</a><br />并使用银联云闪付支付</div>
+      <div class="weui-dialog__ft">
+        <a href="https://qr.95516.com/00010000/62022614452437631250589016210541" class="weui-dialog__btn weui-dialog__btn_default">支付页</a>
+        <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="weui-footer weui-footer_fixed-bottom">
+  <p class="weui-footer__text">Copyright &copy; 2018 Tim Wu.</p>
+</div>
+
+</body>
+
+<script type="text/javascript" class="dialog js_show">
+    $(function(){
+      var $UnionPay = $('#UnionPay');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('.showUnionPay').on('click', function(){
+            $UnionPay.fadeIn(200);
+        });
+        
+      var $PayPalUS = $('#PayPalUS');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('.showPayPalUS').on('click', function(){
+            $PayPalUS.fadeIn(200);
+        });
+
+      var $JDPay = $('#JDPay');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('.showJDPay').on('click', function(){
+            $JDPay.fadeIn(200);
+        });
+
+        var $WeChat = $('#WeChat');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('.showWeChat').on('click', function(){
+            $WeChat.fadeIn(200);
+        });
+
+        var $Alipay = $('#Alipay');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('.showAlipay').on('click', function(){
+            $Alipay.fadeIn(200);
+        });
+
+        var $QQ = $('#QQ');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('.showQQ').on('click', function(){
+            $QQ.fadeIn(200);
+        });
+
+        var $AlipayHK = $('#AlipayHK');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('.showAlipayHK').on('click', function(){
+            $AlipayHK.fadeIn(200);
+        });
+
+        var $Dianping = $('#Dianping');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('.showDianping').on('click', function(){
+            $Dianping.fadeIn(200);
+        });
+    });
+</script>
+
+</html>

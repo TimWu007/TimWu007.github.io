@@ -6,7 +6,7 @@
 <script type="text/javascript">
 	var ua = navigator.userAgent.toLowerCase();
 
-	if((/MicroMessenger/i.test(ua)) or (/TIM/i.test(ua)){
+	if(/MicroMessenger/i.test(ua) || /TIM/i.test(ua)){
 		window.location.href = "wechatpay.html";
 	}
 	
@@ -18,7 +18,7 @@
 		window.location.href = "https://qr.alipay.com/tsx03481owrlfns1w5uadfa";
 	}
 
-	else if(/QQ/i.test(ua) or /TIM/i.test(ua)){
+	else if(/QQ/i.test(ua) || /TIM/i.test(ua)){
 		window.location.href = "qqpay.html";
 	}
 

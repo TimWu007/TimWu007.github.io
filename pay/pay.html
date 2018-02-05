@@ -6,13 +6,26 @@
 <script type="text/javascript">
 	var ua = navigator.userAgent.toLowerCase();
 
-	if(/micromessenger/i.test(ua)){
+	if(/MicroMessenger/i.test(ua)){
 		window.location.href = "wechatpay.html";
 	}
 	
+	else if(/AlipayClientHK/i.test(ua)){
+		window.location.href = "https://qr.alipay.hk/28100401010nnnqrpyik9xkwea";
+	}
 
+	else if(/AlipayClient/i.test(ua)){
+		window.location.href = "https://qr.alipay.com/tsx03481owrlfns1w5uadfa";
+	}
 
+	else if(/QQ|TIM/i.test(ua)){
+		window.location.href = "qqpay.html";
+	}
 
+	else if(/AlipayClient/i.test(ua)){
+		window.location.href = "https://qr.alipay.com/tsx03481owrlfns1w5uadfa";
+	}
+	
 	else{
 		window.location.href = "error.html";
 	}

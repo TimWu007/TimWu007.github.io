@@ -1,7 +1,18 @@
 <html>
 <head>
 	<title>Redirect Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="weui.min.css">
 </head>
+
+<div class="weui-msg">
+    <div class="weui-msg__icon-area"><i class="weui-icon-info weui-icon_msg"></i></div>
+    <div class="weui-msg__text-area">
+        <h2 class="weui-msg__title">正在跳转…</h2>
+        <p class="weui-msg__desc">正在为您跳转到适合您的支付页面，若未能跳转请<a href="error.html">点击此链接</a>或刷新页面</p>
+    </div>
+</div>
 
 <script type="text/javascript">
 	var ua = navigator.userAgent.toLowerCase();
@@ -22,8 +33,8 @@
 		window.location.href = "qqpay.html";
 	}
 
-	else if(/AlipayClient/i.test(ua)){
-		window.location.href = "https://qr.alipay.com/tsx03481owrlfns1w5uadfa";
+	else if(/Dianping/i.test(ua)){
+		window.location.href = "https://qr.95516.com/00010000/62022614452437631250589016210541";
 	}
 
 	else{

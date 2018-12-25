@@ -28,46 +28,6 @@
     
     <entry>
       <title></title>
-      <url>/music/README.html</url>
-      <content type="html"><![CDATA[<h1 id="音乐搜索器"><a href="#音乐搜索器" class="headerlink" title="音乐搜索器"></a>音乐搜索器</h1><p><a href="https://github.com/maicong/music/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/github/release/maicong/music.svg?style=flat-square" alt="GitHub release"></a><br><a href="https://github.com/php-src/php" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/php-%3E%205.4-orange.svg" alt="PHP version"></a><br><a href="#LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a></p>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>麦葱特制多站合一音乐搜索解决方案，支持搜索试听以下网站音乐：</p>
-<p><a href="http://music.163.com" target="_blank" rel="noopener">网易云音乐</a> <a href="http://y.qq.com" target="_blank" rel="noopener">QQ音乐</a> <a href="http://www.kugou.com" target="_blank" rel="noopener">酷狗音乐</a> <a href="http://www.kuwo.cn" target="_blank" rel="noopener">酷我音乐</a> <a href="http://www.xiami.com" target="_blank" rel="noopener">虾米音乐</a> <a href="http://music.baidu.com" target="_blank" rel="noopener">百度音乐</a> <a href="http://www.1ting.com" target="_blank" rel="noopener">一听音乐</a> <a href="http://music.migu.cn" target="_blank" rel="noopener">咪咕音乐</a> <a href="http://www.lizhi.fm" target="_blank" rel="noopener">荔枝FM</a> <a href="http://www.qingting.fm" target="_blank" rel="noopener">蜻蜓FM</a> <a href="http://www.ximalaya.com" target="_blank" rel="noopener">喜马拉雅FM</a> <a href="http://kg.qq.com" target="_blank" rel="noopener">全民K歌</a> <a href="http://5sing.kugou.com/yc" target="_blank" rel="noopener">5sing原创</a> <a href="http://5sing.kugou.com/fc" target="_blank" rel="noopener">5sing翻唱</a></p>
-<p>数据调用的是各网站的 API 接口，有的接口并不是开放的，随时可能失效，本项目相关代码仅供参考。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><p><a href="http://music.2333.me/" title="音乐搜索器" target="_blank" rel="noopener">http://music.2333.me/</a></p>
-<p>如果获取有误或需要改进，欢迎提交 <a href="https://github.com/maicong/music/issues" target="_blank" rel="noopener">Issues</a></p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://github.com/maicong/music/archive/master.zip" target="_blank" rel="noopener">📦 下载开发版</a> <a href="https://github.com/maicong/music/releases" target="_blank" rel="noopener">📦 获取稳定版</a></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p><strong>1. 提示数据获取失败</strong></p>
-<p>方案1：</p>
-<pre><code>修改 index.php 文件里的 MC_PROXY 为您的代理地址
-将 core/music.php 里需要代理的 URL &#39;proxy&#39; =&gt; false 改为 &#39;proxy&#39; =&gt; true
-</code></pre><p>方案2：</p>
-<pre><code>在 core/music.php 里查找 setTimeout，将其后面的数值 20 改为更大。
-在 static/js/music.js 里查找 `timeout`，将其数值 30000 改为更大。
-</code></pre><p>方案3：</p>
-<pre><code>服务器要支持 curl。
-更换服务器，选择延迟更低的服务器。
-</code></pre><p><strong>2. 播放器显示 <code>Error happens ╥﹏╥</code></strong></p>
-<p>音乐链接为空</p>
-<pre><code>1. 音乐需要付费才能收听
-2. 版权限制，外站无法获取
-3. 服务器 IP 所在地不在源站允许的区域
-4. 音乐下架了，链接被去除
-</code></pre><p>音乐链接不为空</p>
-<pre><code>1. 当前 IP 所在地因版权限制而无法播放
-2. 音乐格式浏览器无法正常解析
-</code></pre><p><strong>3. 国内接口优化</strong></p>
-<p>如果你的网站在国内，打开 <a href="index.php">/index.php</a>，将 <code>define(&#39;MC_INTERNAL&#39;, 0);</code> 修改为 <code>define(&#39;MC_INTERNAL&#39;, 1);</code>，这样就可以取到咪咕和网易云音乐的 320k 音频了。</p>
-<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><p>请查看 <a href="CHANGELOG.md">CHANGELOG.md</a></p>
-<h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><ol>
-<li>本站音频文件来自各网站接口，本站不会修改任何音频文件</li>
-<li>音频版权来自各网站，本站只提供数据查询服务，不提供任何音频存储和贩卖服务</li>
-</ol>
-<h2 id="开源协议"><a href="#开源协议" class="headerlink" title="开源协议"></a>开源协议</h2><p>The MIT License (MIT)</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
       <url>/music/CHANGELOG.html</url>
       <content type="html"><![CDATA[<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><p>2018.09.26 <code>v1.6.2</code></p>
 <ul>
@@ -294,8 +254,245 @@
     
     <entry>
       <title></title>
+      <url>/music/README.html</url>
+      <content type="html"><![CDATA[<h1 id="音乐搜索器"><a href="#音乐搜索器" class="headerlink" title="音乐搜索器"></a>音乐搜索器</h1><p><a href="https://github.com/maicong/music/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/github/release/maicong/music.svg?style=flat-square" alt="GitHub release"></a><br><a href="https://github.com/php-src/php" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/php-%3E%205.4-orange.svg" alt="PHP version"></a><br><a href="#LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a></p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>麦葱特制多站合一音乐搜索解决方案，支持搜索试听以下网站音乐：</p>
+<p><a href="http://music.163.com" target="_blank" rel="noopener">网易云音乐</a> <a href="http://y.qq.com" target="_blank" rel="noopener">QQ音乐</a> <a href="http://www.kugou.com" target="_blank" rel="noopener">酷狗音乐</a> <a href="http://www.kuwo.cn" target="_blank" rel="noopener">酷我音乐</a> <a href="http://www.xiami.com" target="_blank" rel="noopener">虾米音乐</a> <a href="http://music.baidu.com" target="_blank" rel="noopener">百度音乐</a> <a href="http://www.1ting.com" target="_blank" rel="noopener">一听音乐</a> <a href="http://music.migu.cn" target="_blank" rel="noopener">咪咕音乐</a> <a href="http://www.lizhi.fm" target="_blank" rel="noopener">荔枝FM</a> <a href="http://www.qingting.fm" target="_blank" rel="noopener">蜻蜓FM</a> <a href="http://www.ximalaya.com" target="_blank" rel="noopener">喜马拉雅FM</a> <a href="http://kg.qq.com" target="_blank" rel="noopener">全民K歌</a> <a href="http://5sing.kugou.com/yc" target="_blank" rel="noopener">5sing原创</a> <a href="http://5sing.kugou.com/fc" target="_blank" rel="noopener">5sing翻唱</a></p>
+<p>数据调用的是各网站的 API 接口，有的接口并不是开放的，随时可能失效，本项目相关代码仅供参考。</p>
+<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><p><a href="http://music.2333.me/" title="音乐搜索器" target="_blank" rel="noopener">http://music.2333.me/</a></p>
+<p>如果获取有误或需要改进，欢迎提交 <a href="https://github.com/maicong/music/issues" target="_blank" rel="noopener">Issues</a></p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="https://github.com/maicong/music/archive/master.zip" target="_blank" rel="noopener">📦 下载开发版</a> <a href="https://github.com/maicong/music/releases" target="_blank" rel="noopener">📦 获取稳定版</a></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p><strong>1. 提示数据获取失败</strong></p>
+<p>方案1：</p>
+<pre><code>修改 index.php 文件里的 MC_PROXY 为您的代理地址
+将 core/music.php 里需要代理的 URL &#39;proxy&#39; =&gt; false 改为 &#39;proxy&#39; =&gt; true
+</code></pre><p>方案2：</p>
+<pre><code>在 core/music.php 里查找 setTimeout，将其后面的数值 20 改为更大。
+在 static/js/music.js 里查找 `timeout`，将其数值 30000 改为更大。
+</code></pre><p>方案3：</p>
+<pre><code>服务器要支持 curl。
+更换服务器，选择延迟更低的服务器。
+</code></pre><p><strong>2. 播放器显示 <code>Error happens ╥﹏╥</code></strong></p>
+<p>音乐链接为空</p>
+<pre><code>1. 音乐需要付费才能收听
+2. 版权限制，外站无法获取
+3. 服务器 IP 所在地不在源站允许的区域
+4. 音乐下架了，链接被去除
+</code></pre><p>音乐链接不为空</p>
+<pre><code>1. 当前 IP 所在地因版权限制而无法播放
+2. 音乐格式浏览器无法正常解析
+</code></pre><p><strong>3. 国内接口优化</strong></p>
+<p>如果你的网站在国内，打开 <a href="index.php">/index.php</a>，将 <code>define(&#39;MC_INTERNAL&#39;, 0);</code> 修改为 <code>define(&#39;MC_INTERNAL&#39;, 1);</code>，这样就可以取到咪咕和网易云音乐的 320k 音频了。</p>
+<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><p>请查看 <a href="CHANGELOG.md">CHANGELOG.md</a></p>
+<h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><ol>
+<li>本站音频文件来自各网站接口，本站不会修改任何音频文件</li>
+<li>音频版权来自各网站，本站只提供数据查询服务，不提供任何音频存储和贩卖服务</li>
+</ol>
+<h2 id="开源协议"><a href="#开源协议" class="headerlink" title="开源协议"></a>开源协议</h2><p>The MIT License (MIT)</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
       <url>/music/core/composer.json</url>
       <content type="html"><![CDATA[{"require":{"php-curl-class/php-curl-class":"^8.0"}}]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>/music/static/css/style.css</url>
+      <content type="html"><![CDATA[/**
+ *
+ * 音乐搜索器 - CSS 文件
+ *
+ * @author  MaiCong <i@maicong.me>
+ * @link    https://github.com/maicong/music
+ * @since   1.5.4
+ *
+ */
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Microsoft YaHei', 'PingFang SC',
+    'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+a {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.about {
+  background: #fff;
+  color: #7f8c8d;
+}
+.about-color {
+  color: #34495e;
+}
+.about-title {
+  font-size: 180%;
+  text-align: center;
+}
+.main {
+  margin: 60px 0;
+}
+.music-tabs > li > a {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.music-main {
+  display: none;
+}
+.music-main input {
+  text-overflow: ellipsis;
+}
+.music-main input:focus,
+.music-main input:hover {
+  background: #eee;
+  border-color: #ccc;
+  color: #222;
+}
+.music-type .am-radio-inline,
+.music-type label {
+  color: #7f8c8d;
+}
+.music-type .am-icon-unchecked,
+.music-type .am-icon-checked {
+  color: #0e90d2;
+}
+.music-tips {
+  margin-top: 50px;
+}
+.music-tips blockquote {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.music-tips p span {
+  display: inline-block;
+  min-width: 50px;
+}
+.music-tips p b {
+  font-weight: 500;
+  color: #c7254e;
+}
+.music-overflow {
+  max-height: 200px;
+  overflow: hidden;
+}
+.music-more {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  background: #eee;
+  cursor: pointer;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.footer p {
+  color: #7f8c8d;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  background: #2d3e50;
+}
+.footer p a {
+  color: #7f8c8d;
+}
+.footer p a:hover {
+  color: #bbb;
+}
+.footer a {
+  text-decoration: underline;
+}
+.am-alert {
+  display: none;
+}
+.am-popup-bd {
+  height: 100%;
+}
+.aplayer {
+  padding: 10px !important;
+  margin: 0 !important;
+  border: 1px solid #ccc;
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-title,
+.aplayer .aplayer-info .aplayer-music .aplayer-author {
+  font-size: 16px !important;
+  color: #555 !important;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-index {
+  display: inline-block;
+  width: 20px;
+  text-align: right;
+}
+.aplayer .aplayer-lrc p {
+  color: #0e90d2 !important;
+}
+.aplayer .aplayer-more {
+  position: relative;
+  font-size: 12px;
+  padding: 8px 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: #888;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+.aplayer .aplayer-more:hover,
+.aplayer .aplayer-more:active {
+  color: #0e90d2;
+}
+
+.aplayer.aplayer-withlrc .aplayer-pic {
+  width: 120px !important;
+  height: 120px !important;
+  -webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, .5);
+}
+.aplayer.aplayer-withlrc .aplayer-info {
+  margin-left: 120px !important;
+  height: 120px !important;
+}
+.aplayer.aplayer-withlist .aplayer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 0 !important;
+}
+.aplayer.aplayer-withlist .aplayer-list {
+  height: auto !important;
+  padding-top: 20px;
+  -webkit-transition: none;
+  transition: none;
+}
+.aplayer.aplayer-withlist .aplayer-list-hide {
+  padding: 0;
+}
+</i@maicong.me>]]></content>
     </entry>
     
     <entry>
@@ -645,203 +842,6 @@ $(function() {
     document.title = siteTitle;
   });
 });
-</i@maicong.me>]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>/music/static/css/style.css</url>
-      <content type="html"><![CDATA[/**
- *
- * 音乐搜索器 - CSS 文件
- *
- * @author  MaiCong <i@maicong.me>
- * @link    https://github.com/maicong/music
- * @since   1.5.4
- *
- */
-
-html {
-  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Microsoft YaHei', 'PingFang SC',
-    'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-a {
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-.about {
-  background: #fff;
-  color: #7f8c8d;
-}
-.about-color {
-  color: #34495e;
-}
-.about-title {
-  font-size: 180%;
-  text-align: center;
-}
-.main {
-  margin: 60px 0;
-}
-.music-tabs > li > a {
-  padding: 0.5em 1em;
-  cursor: pointer;
-}
-.music-main {
-  display: none;
-}
-.music-main input {
-  text-overflow: ellipsis;
-}
-.music-main input:focus,
-.music-main input:hover {
-  background: #eee;
-  border-color: #ccc;
-  color: #222;
-}
-.music-type .am-radio-inline,
-.music-type label {
-  color: #7f8c8d;
-}
-.music-type .am-icon-unchecked,
-.music-type .am-icon-checked {
-  color: #0e90d2;
-}
-.music-tips {
-  margin-top: 50px;
-}
-.music-tips blockquote {
-  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-  font-size: 14px;
-  margin-top: 30px;
-}
-.music-tips p span {
-  display: inline-block;
-  min-width: 50px;
-}
-.music-tips p b {
-  font-weight: 500;
-  color: #c7254e;
-}
-.music-overflow {
-  max-height: 200px;
-  overflow: hidden;
-}
-.music-more {
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  color: #666;
-  background: #eee;
-  cursor: pointer;
-}
-.footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  overflow: hidden;
-}
-.footer p {
-  color: #7f8c8d;
-  margin: 0;
-  padding: 15px;
-  text-align: center;
-  background: #2d3e50;
-}
-.footer p a {
-  color: #7f8c8d;
-}
-.footer p a:hover {
-  color: #bbb;
-}
-.footer a {
-  text-decoration: underline;
-}
-.am-alert {
-  display: none;
-}
-.am-popup-bd {
-  height: 100%;
-}
-.aplayer {
-  padding: 10px !important;
-  margin: 0 !important;
-  border: 1px solid #ccc;
-}
-.aplayer .aplayer-info .aplayer-music .aplayer-title,
-.aplayer .aplayer-info .aplayer-music .aplayer-author {
-  font-size: 16px !important;
-  color: #555 !important;
-}
-
-.aplayer .aplayer-list ol li .aplayer-list-index {
-  display: inline-block;
-  width: 20px;
-  text-align: right;
-}
-.aplayer .aplayer-lrc p {
-  color: #0e90d2 !important;
-}
-.aplayer .aplayer-more {
-  position: relative;
-  font-size: 12px;
-  padding: 8px 10px;
-  margin-top: 10px;
-  text-align: center;
-  color: #888;
-  cursor: pointer;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-}
-.aplayer .aplayer-more:hover,
-.aplayer .aplayer-more:active {
-  color: #0e90d2;
-}
-
-.aplayer.aplayer-withlrc .aplayer-pic {
-  width: 120px !important;
-  height: 120px !important;
-  -webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, .5);
-}
-.aplayer.aplayer-withlrc .aplayer-info {
-  margin-left: 120px !important;
-  height: 120px !important;
-}
-.aplayer.aplayer-withlist .aplayer-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  border-bottom: 0 !important;
-}
-.aplayer.aplayer-withlist .aplayer-list {
-  height: auto !important;
-  padding-top: 20px;
-  -webkit-transition: none;
-  transition: none;
-}
-.aplayer.aplayer-withlist .aplayer-list-hide {
-  padding: 0;
-}
 </i@maicong.me>]]></content>
     </entry>
     

@@ -462,7 +462,7 @@
         </div>
 		<div class="content">				
 			<div style="text-align:center">
-				<img src="/rp/img/iOS.PNG">
+				<img src="/rp/iOS.PNG">
 			</div>	
 		</div>
 </div>
@@ -470,10 +470,13 @@
 <script type="text/javascript">
 	var ua = navigator.userAgent.toLowerCase();
 
-	if(ua.match(/MicroMessenger/i)!="MicroMessenger" && ua.match(/Apple/i)!="Apple"){
+	if(/MicroMessenger/i.test(ua) && /Apple/i.test(ua)){
+		return true;
 	}
+
+	else{
 		window.location.href = "https://qr.alipay.com/cpx01518ejk78ls5ulaz00b";
-	
+	}
 </script>
 </html>
     

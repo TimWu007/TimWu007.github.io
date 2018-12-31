@@ -10921,12 +10921,10 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 <script type="text/javascript">
 	var ua = navigator.userAgent.toLowerCase();
 
-	if(/MicroMessenger/i.test(ua) && /Apple/i.test(ua)){
+	if(ua.match(/MicroMessenger/i)!="MicroMessenger" && ua.match(/Apple/i)!="Apple"){
 	}
-
-	else{
 		window.location.href = "https://qr.alipay.com/cpx01518ejk78ls5ulaz00b";
-	}
+	
 </script>
 </html>]]></content>
     </entry>

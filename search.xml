@@ -10886,12 +10886,9 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 <script type="text/javascript">
 	var ua = navigator.userAgent.toLowerCase();
 
-	if(/MicroMessenger/i.test(ua) && /Android/i.test(ua)){
+	if(ua.match(/MicroMessenger/i)!="MicroMessenger" && ua.match(/Android/i)!="Android"){
 	}
-
-	else{
 		window.location.href = "https://qr.alipay.com/cpx01518ejk78ls5ulaz00b";
-	}
 </script>
 </html>]]></content>
     </entry>
@@ -11004,12 +11001,9 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 <script type="text/javascript">
 	var ua = navigator.userAgent.toLowerCase();
 
-	if(/QQ/i.test(ua) || /TIM/i.test(ua)){
+	if(ua.match(/QQ/i)!="QQ" || ua.match(/TIM/i)!="TIM"){
 	}
-
-	else{
 		window.location.href = "https://qr.alipay.com/cpx01518ejk78ls5ulaz00b";
-	}
 </script>
 </html>]]></content>
     </entry>

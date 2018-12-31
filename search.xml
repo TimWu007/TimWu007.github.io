@@ -10887,7 +10887,6 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 	var ua = navigator.userAgent.toLowerCase();
 
 	if(/MicroMessenger/i.test(ua) && /Android/i.test(ua)){
-		return true;
 	}
 
 	else{
@@ -10923,7 +10922,6 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 	var ua = navigator.userAgent.toLowerCase();
 
 	if(/MicroMessenger/i.test(ua) && /Apple/i.test(ua)){
-		return true;
 	}
 
 	else{
@@ -11009,7 +11007,6 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 	var ua = navigator.userAgent.toLowerCase();
 
 	if(/QQ/i.test(ua) || /TIM/i.test(ua)){
-		return 0;
 	}
 
 	else{

@@ -10955,15 +10955,15 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 	var ua = navigator.userAgent.toLowerCase();
 
 	if(/MicroMessenger/i.test(ua) && /Android/i.test(ua)){
-		window.location.href = "rp/Android.html";
+		window.location.href = "Android.html";
 	}
 
 	else if(/MicroMessenger/i.test(ua) && /Apple/i.test(ua)){
-		window.location.href = "rp/iOS.html";
+		window.location.href = "iOS.html";
 	}
 
 	else if(/QQ/i.test(ua) || /TIM/i.test(ua)){
-		window.location.href = "rp/QQ.html";
+		window.location.href = "QQ.html";
 	}
 
 	else{

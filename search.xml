@@ -10878,7 +10878,7 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
         </div>
 		<div class="content">				
 			<div style="text-align:center">
-				<img src="/rp/img/Android.jpg">
+				<img src="/rp/Android.jpg">
 			</div>	
 		</div>
 </div>
@@ -10914,7 +10914,7 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
         </div>
 		<div class="content">				
 			<div style="text-align:center">
-				<img src="/rp/img/iOS.PNG">
+				<img src="/rp/iOS.PNG">
 			</div>	
 		</div>
 </div>
@@ -11000,7 +11000,7 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
         </div>
 		<div class="content">				
 			<div style="text-align:center">
-				<img src="/rp/img/QQ.jpg">
+				<img src="/rp/QQ.jpg">
 			</div>	
 		</div>
 </div>

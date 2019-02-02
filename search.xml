@@ -974,9 +974,8 @@ console.log('\n %c © Material Theme | Version: 1.4.0 | https://github.com/viose
 	<title>Redirect Page</title>
 </head>
 <body>
-	<meta http-equiv="refresh" content="0;url=../pay/index.html"> 
+	<meta http-equiv="refresh" content="0;url=/pay/index.html"> 
 	<h2>Redirecting...</h2>
-
 </body>
 </html>]]></content>
     </entry>
